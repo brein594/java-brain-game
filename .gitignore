@@ -1,3 +1,5 @@
 /app/.gradle/
 /app/build/
 /app/.idea
+ ..gitignore.swp
+
