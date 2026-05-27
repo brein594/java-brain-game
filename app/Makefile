@@ -7,3 +7,6 @@ run:
 #компиляция в jar
 install:
 	./gradlew installDist
+#проверка офомления
+check:
+	./gradlew check
