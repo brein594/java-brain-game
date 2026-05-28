@@ -6,7 +6,22 @@ import hexlet.code.Cli;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class App {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Brain Games!");
-        Cli.userName();
+        System.out.println("Please enter the game number and press Enter.");
+        System.out.println("1 - Greet");
+        System.out.println("0 - Exit");
+        System.out.println("Your choice: ");
+        var numberGame = Cli.scanerString();
+        switch(numberGame) {
+            case ("0"):
+                System.exit(0);
+                break;
+            case ("1"):
+                Cli.userName();
+                break;
+            default:
+                System.exit(0);
+                break;
+        }
+
     }
 }
