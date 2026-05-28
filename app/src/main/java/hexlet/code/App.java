@@ -7,6 +7,7 @@ import hexlet.code.Cli;
 public class App {
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.");
+        System.out.println("2 - Event");
         System.out.println("1 - Greet");
         System.out.println("0 - Exit");
         System.out.println("Your choice: ");
@@ -16,7 +17,10 @@ public class App {
                 System.exit(0);
                 break;
             case ("1"):
-                Cli.userName();
+                GreetGame.game();
+                break;
+            case ("2"):
+               EvenGame.game();
                 break;
             default:
                 System.exit(0);

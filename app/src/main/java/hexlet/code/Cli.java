@@ -5,20 +5,8 @@ public class Cli {
 
     public static String scanerString() {
         Scanner scanner = new Scanner(System.in);
-        String result = scanner.next();
+        return scanner.nextLine();
         //scanner.close();
-        return result;
     }
-
-    public static void userName() {
-        Scanner scanner1 = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        String userName = scanner1.next();
-        System.out.println("Hello, " + userName + "!");
-        scanner1.close();
-    }
-
-
 
 }
